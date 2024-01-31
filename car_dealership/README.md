@@ -21,4 +21,7 @@ The flow below should be handled.
  */
 ```
 
-Note: I will only make a bare-bones solution, because this is very basic stuff I already have a grasp on.
+Note: I will only make a bare-bones solution, because this is very basic code I already have a grasp on.
+
+The biggest challenge here is working with the provided framework, because I don't understand the 'finance' boolean.
+
