@@ -52,4 +52,15 @@ public class Worker {
         }
         return startIndexOfCategoryName + charCounter;
     }
+
+    public static void printInputInReverseOrder(String forLoopInput) {
+        for (int i = (forLoopInput.length() - 1); i >= 0; i--) {
+            System.out.println(forLoopInput.charAt(i));
+        }
+    }
+    public static void printEvenNumbers(int number){
+        for (int evenNumber = 0; evenNumber <= number; evenNumber+=2){
+            System.out.println(evenNumber);
+        }
+    }
 }

@@ -6,5 +6,8 @@ public class LoopsPractice {
                 "the category:apparel and the slightly " +
                 "more in demand category:makeup along with wit the category:furniture.";
         Worker.printCategories(input);
+        String forLoopInput = "sfdfewencsoidfhsjdf";
+        Worker.printInputInReverseOrder(forLoopInput);
+        Worker.printEvenNumbers(9);
     }
 }
