@@ -3,3 +3,11 @@
 
 # Directory of our generated code.
 /out
+
+# Downloaded executeable jar. See also README.md in comparing_serialization_deployment/src/me/noitcereon/deployment/README.md
+Mario_Nes_60_FPS.jar
+
+# Don't push bytecode...
+*.class
+
+deploymentWorker.jar
