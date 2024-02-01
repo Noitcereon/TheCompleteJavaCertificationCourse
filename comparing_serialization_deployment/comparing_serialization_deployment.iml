@@ -7,6 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="car_dealership" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="8bcb3181-16fa-469b-ba7e-1fa2a35d6321" />
