@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TheCompleteJavaCertificationCourse.iml" filepath="$PROJECT_DIR$/TheCompleteJavaCertificationCourse.iml" />
       <module fileurl="file://$PROJECT_DIR$/car_dealership/car_dealership.iml" filepath="$PROJECT_DIR$/car_dealership/car_dealership.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comparing_serialization_deployment/comparing_serialization_deployment.iml" filepath="$PROJECT_DIR$/comparing_serialization_deployment/comparing_serialization_deployment.iml" />
     </modules>
   </component>
 </project>
