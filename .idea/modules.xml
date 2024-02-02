@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TheCompleteJavaCertificationCourse.iml" filepath="$PROJECT_DIR$/TheCompleteJavaCertificationCourse.iml" />
       <module fileurl="file://$PROJECT_DIR$/car_dealership/car_dealership.iml" filepath="$PROJECT_DIR$/car_dealership/car_dealership.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections_framework/collections_framework.iml" filepath="$PROJECT_DIR$/collections_framework/collections_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/comparing_serialization_deployment/comparing_serialization_deployment.iml" filepath="$PROJECT_DIR$/comparing_serialization_deployment/comparing_serialization_deployment.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_basics/java_basics.iml" filepath="$PROJECT_DIR$/java_basics/java_basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/processing_files/processing_files.iml" filepath="$PROJECT_DIR$/processing_files/processing_files.iml" />
