@@ -1,11 +1,44 @@
 package me.noitcereon.learning.threads;
 
+import me.noitcereon.learning.threads.inventory.InventoryManager;
+
 import static java.lang.Thread.sleep;
 
 public class ThreadingApp {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         introductionToThreads(false);
 
+        introToThreadSafety(false);
+
+        threadSafetyUsingCollections(true);
+    }
+    private static void threadSafetyUsingCollections(boolean shouldRun) throws InterruptedException {
+        if(shouldRun == false) return;
+        // Key take away: Use thread safe collections, when working multithreaded.
+        // Example: CopyOnWriteArrayList in the java.util.concurrent package
+
+        InventoryManager manager = new InventoryManager();
+
+        Thread inventoryTask = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                manager.populateSoldProducts();
+            }
+        });
+        Thread displayTask = new Thread(manager::displaySoldProducts);
+
+        inventoryTask.start();
+        // You can use the Thread's .join method to wait until it has completed running.
+        // Example: inventoryTask.join(); NOSONAR
+        Thread.sleep(1000); // Wait a bit so there is something to display...
+        displayTask.start();
+        Thread.sleep(1000); // Wait a bit more, so there is more to display.
+        Thread displayTask2 = new Thread(manager::displaySoldProducts);
+        displayTask2.start();
+    }
+
+    private static void introToThreadSafety(boolean shouldRun) {
+        if(shouldRun == false) return;
         Sequence sequence = new Sequence();
 
         Worker worker1 = new Worker(sequence);
@@ -30,6 +63,7 @@ public class ThreadingApp {
                     sleep(sleepMs);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                    Thread.currentThread().interrupt();
                 }
                 System.out.println("number " + i + " - " + Thread.currentThread().getName());
             }
