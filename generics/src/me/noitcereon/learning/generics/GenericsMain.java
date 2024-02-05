@@ -1,4 +1,4 @@
-package me.noitcereon.generics;
+package me.noitcereon.learning.generics;
 
 
 public class GenericsMain {

@@ -1,4 +1,4 @@
-package me.noitcereon.generics;
+package me.noitcereon.learning.generics;
 
 import java.util.HashSet;
 import java.util.Set;

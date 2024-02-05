@@ -1,7 +1,7 @@
-package me.noitcereon.generics;
+package me.noitcereon.learning.generics;
 
-import me.noitcereon.generics.models.Accountant;
-import me.noitcereon.generics.models.Employee;
+import me.noitcereon.learning.generics.models.Accountant;
+import me.noitcereon.learning.generics.models.Employee;
 
 import java.util.ArrayList;
 import java.util.Collection;

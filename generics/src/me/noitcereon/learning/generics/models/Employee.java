@@ -1,4 +1,4 @@
-package me.noitcereon.generics.models;
+package me.noitcereon.learning.generics.models;
 
 public class Employee
 {
