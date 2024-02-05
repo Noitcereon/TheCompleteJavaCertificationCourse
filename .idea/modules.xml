@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LearningThreading/LearningThreading.iml" filepath="$PROJECT_DIR$/LearningThreading/LearningThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/assignments/assignments.iml" filepath="$PROJECT_DIR$/assignments/assignments.iml" />
       <module fileurl="file://$PROJECT_DIR$/car_dealership/car_dealership.iml" filepath="$PROJECT_DIR$/car_dealership/car_dealership.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections_framework/collections_framework.iml" filepath="$PROJECT_DIR$/collections_framework/collections_framework.iml" />
