@@ -3,9 +3,13 @@ package me.noitcereon.learning.threads;
 import me.noitcereon.learning.threads.inventory.InventoryManager;
 import me.noitcereon.learning.threads.producer_consumer.Consumer;
 import me.noitcereon.learning.threads.producer_consumer.Producer;
+import me.noitcereon.learning.threads.producer_consumer_queue.ConsumerWithQueue;
+import me.noitcereon.learning.threads.producer_consumer_queue.ProducerWithQueue;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 import static java.lang.Thread.sleep;
 
@@ -24,7 +28,18 @@ public class ThreadingApp {
 
     private static void producerConsumerPatternWithQueue(boolean shouldRun) {
         if(shouldRun == false) return;
+        BlockingQueue<Integer> questionQueue = new ArrayBlockingQueue<>(5);
+        ProducerWithQueue producer = new ProducerWithQueue(questionQueue);
+        ConsumerWithQueue consumer = new ConsumerWithQueue(questionQueue);
 
+        Thread producerThread1 = new Thread(producer, "Producer-1");
+        Thread consumerThread1 = new Thread(consumer, "Consumer-1");
+        Thread producerThread2 = new Thread(producer, "Producer-2");
+        Thread consumerThread2 = new Thread(consumer, "Consumer-2");
+        producerThread1.start();
+        consumerThread1.start();
+        producerThread2.start();
+        consumerThread2.start();
     }
 
     /**
