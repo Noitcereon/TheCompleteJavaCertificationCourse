@@ -4,6 +4,19 @@ import static java.lang.Thread.sleep;
 
 public class ThreadingApp {
     public static void main(String[] args){
+        introductionToThreads(false);
+
+        Sequence sequence = new Sequence();
+
+        Worker worker1 = new Worker(sequence);
+        worker1.start();
+
+        Worker worker2 = new Worker(sequence);
+        worker2.start();
+    }
+
+    private static void introductionToThreads(boolean shouldRun) {
+        if(shouldRun == false) return;
         System.out.println("Starting thread 1");
         Thread t1 = new Thread(new Task("Thread-A"));
         t1.start();
