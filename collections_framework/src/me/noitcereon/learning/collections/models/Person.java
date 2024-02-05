@@ -1,4 +1,4 @@
-package me.noitcereon.collections.models;
+package me.noitcereon.learning.collections.models;
 
 import java.util.Objects;
 

@@ -1,10 +1,10 @@
-package me.noitcereon.collections;
+package me.noitcereon.learning.collections;
 
-import me.noitcereon.collections.models.Person;
+import me.noitcereon.learning.collections.models.Person;
 
 import java.util.*;
 
-import static me.noitcereon.collections.StaticData.getStringStringTreeMap;
+import static me.noitcereon.learning.collections.StaticData.getStringStringTreeMap;
 
 public class CollectionsMain {
     public static void main(String[] args){

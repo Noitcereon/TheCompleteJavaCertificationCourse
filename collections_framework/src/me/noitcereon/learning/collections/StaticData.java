@@ -1,6 +1,6 @@
-package me.noitcereon.collections;
+package me.noitcereon.learning.collections;
 
-import me.noitcereon.collections.models.Person;
+import me.noitcereon.learning.collections.models.Person;
 
 import java.util.*;
 
