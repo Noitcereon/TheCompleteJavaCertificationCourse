@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class AggregatorProcessor<T extends Aggregator>{
 
-    private Aggregator aggregator;
+    private T aggregator;
     private final StockFileReader stockFileReader;
 
     public AggregatorProcessor(T aggregator, String dataFilePath){
@@ -49,11 +49,11 @@ public class AggregatorProcessor<T extends Aggregator>{
         return categoryToColumnMap;
     }
 
-    public Aggregator getAggregator() {
+    public T getAggregator() {
         return aggregator;
     }
 
-    public void setAggregator(Aggregator aggregator) {
+    public void setAggregator(T aggregator) {
         this.aggregator = aggregator;
     }
 }
