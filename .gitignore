@@ -21,3 +21,6 @@ deploymentWorker.jar
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# IntelliJ module file
+*.iml
