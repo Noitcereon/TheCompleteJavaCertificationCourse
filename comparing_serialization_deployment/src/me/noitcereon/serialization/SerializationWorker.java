@@ -22,6 +22,11 @@ public class SerializationWorker {
         System.out.println(deserializedEmployee);
     }
 
+    /**
+     * Serializes an Employee (which implements Serializable) to a non-human readable file, that can be used to reconstruct
+     * the object with ObjectInputStream.
+     * @param employee
+     */
     private static void serializeEmployee(Employee employee) {
         System.out.println("Serializing: " + employee);
         // Note: FileOutputStream may not create the file specified, so it has to be created first, or it will throw an exception.
