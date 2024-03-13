@@ -53,8 +53,10 @@ public class ComparisonWorker {
         System.out.println(students);
         // Ascending order based on the first digit in a number and student's compareTo method (Comparable). (2, 25, 65)
         students.sort((Student a, Student b) -> {
-            if (a.rollNumber%10 > b.rollNumber%10) return 1;
-            if(a.rollNumber%10 == b.rollNumber%10){
+            int studentAFirstRollNoDigit = a.rollNumber%10;
+            int studentBFirstRollNoDigit = b.rollNumber%10;
+            if (studentAFirstRollNoDigit > studentBFirstRollNoDigit) return 1;
+            if(studentAFirstRollNoDigit == studentBFirstRollNoDigit){
                return a.compareTo(b);
             }
             else return -1;
